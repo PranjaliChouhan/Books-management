@@ -125,11 +125,9 @@ h2 {
 .books ul{
   list-style: none;
 }
-.books button {
-  
-}
 
-/* Update and delete buttons */
+
+
 .update-button,
 .delete-button {
   padding: 0.25rem 0.5rem;
@@ -147,11 +145,7 @@ h2 {
   background-color: #4fa3d1;
 }
 
-/* Media queries... */
 
-
-
-/* Media query for screens 600px and below */
 @media (max-width: 600px) {
   .App {
     margin: 1rem;
@@ -162,7 +156,7 @@ h2 {
   }
 }
 
-/* Media query for screens 900px and below */
+
 @media (max-width: 900px) {
   .books {
     padding: 0.5rem;
@@ -173,7 +167,7 @@ h2 {
   }
 }
 
-/* Media query for screens 1200px and below */
+
 @media (max-width: 1200px) {
   h1 {
     font-size: 1.5rem;
