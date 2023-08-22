@@ -39,9 +39,43 @@
 
 body{
   background-color: #282c34;
+  
 }
 .App h1{
   font-size: 60px;
   color: aliceblue;
   font-family: monospace;
+}
+.App h2{
+  margin: 20px;
+  font-size: 30px;
+  font-family: cursive;
+  color: aliceblue;
+}
+.books{
+  list-style: none;
+  color: rgb(164, 225, 241);
+  font-size: 30px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.books button{
+  margin:10px ;
+
+}
+.add{
+  margin-right: 30px;
+
+}
+.add{
+  height: 55px;
+  margin-left: 30px!important;
+  box-shadow: -2px 2px 10px #0f94e0f0,
+  -2px 2px 5px rgb(161, 200, 231),
+  -2px 2px 5px rgb(161, 200, 231);
+   color: #0f94e0f0!important;          
+
+}
+.add ::placeholder{
+  color: #0f94e0f0!important;
+
 }

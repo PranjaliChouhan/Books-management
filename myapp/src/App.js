@@ -71,7 +71,7 @@ function App() {
       <Typography variant="h1" >Manage-Books</Typography>
 
       <Typography variant="h2">Book-list</Typography>
-      <ul>
+      <ul className='books'>
         {books.map((book) => (
           <li key={book.id}>
             {book.title}
@@ -87,12 +87,13 @@ function App() {
 
       <Typography variant="h2">Add a New Book</Typography>
       <TextField
+         className='add'
         type="text"
         value={newBookTitle}
         onChange={(e) => setNewBookTitle(e.target.value)}
         placeholder="Enter book title"
       />
-      <Button onClick={addBook} variant="contained" color="primary">
+      <Button className='add' onClick={addBook}  >
         Add Book
       </Button>
     </div>
