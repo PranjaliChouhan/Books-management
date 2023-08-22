@@ -3,9 +3,7 @@ import './App.css';
 
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
+
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -68,34 +66,34 @@ function App() {
 
   return (
     <div className="App">
-      <Typography variant="h1" >Manage-Books</Typography>
+      <h1>Books Management</h1>
 
-      <Typography variant="h2">Book-list</Typography>
-      <ul className='books'>
+      <h2>Books-List</h2>
+      <div className='books'>
+      <ul >
         {books.map((book) => (
           <li key={book.id}>
             {book.title}
-            <Button onClick={() => updateBook(book.id)} variant="outlined">
-              Update
-            </Button>
-            <Button onClick={() => deleteBook(book.id)} variant="outlined">
-              Delete
-            </Button>
+           
+            <button   className="btn" onClick={() => updateBook(book.id)}>Update</button>
+            <button  className="btn" onClick={() => deleteBook(book.id)}>Delete</button>
+          
           </li>
         ))}
       </ul>
+      </div>
 
-      <Typography variant="h2">Add a New Book</Typography>
-      <TextField
-         className='add'
+      <h2>Add a New Book</h2>
+      <div  className='add'>
+      <input
+        
         type="text"
         value={newBookTitle}
         onChange={(e) => setNewBookTitle(e.target.value)}
         placeholder="Enter book title"
       />
-      <Button className='add' onClick={addBook}  >
-        Add Book
-      </Button>
+      <button  className='add' onClick={addBook}>Add Book</button>
+      </div>
     </div>
   );
 }
